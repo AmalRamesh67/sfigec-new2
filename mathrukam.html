@@ -11,6 +11,12 @@
     <link href="//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk" rel="stylesheet" type="text/css"/>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/020fefa3cb.js"></script>
+    <script type="text/javascript">
+        function openTab(th)
+        {
+            window.open(th.name,'_blank');
+        }
+    </script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -27,8 +33,9 @@
            <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="http://notes.sfigec.in/">Notes</a></li>
-               <li><a href="http://admission.sfigec.in/">Admission</a></li>
+               <li><a href="http://kaithangu.sfigec.in/">Notes</a></li>
+               <li><a onClick="openTab(this)" href="#" name="PDF/magazine.pdf">Magazine</a></li>
+               <!-- <li><a href="http://admission.sfigec.in/">Admission</a></li> -->
                <li><a href="http://tholi.in/">Magazine</a></li>
                <li><a href="union.html">Union Initiatives</a></li>
                <li><a href="gallery.html">Gallery</a></li>

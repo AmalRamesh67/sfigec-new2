@@ -221,6 +221,7 @@ span {
   justify-content: center;
 }
 
+
 .images a {
   width: max-content;
 }
@@ -235,6 +236,9 @@ span {
   display: flex;
   justify-content: space-between;
   width: 20%;
+}
+.img-col{
+  margin-top: 10vh;
 }
 
 .no-shrink {
@@ -255,7 +259,6 @@ span {
   justify-content: center;
   align-items: center;
 }
-
 .vertical-line {
   border-left: 0.5px solid #7a7a7a;
   height: 2rem;
@@ -490,5 +493,11 @@ footer h2 {
   .images-flex img {
     width: 100%;
     margin: 0;
+  }
+  .img-col{
+    margin-top:0vh;
+  }
+  .img-col .col-span-6{
+    margin-top: 5vh;
   }
 }
