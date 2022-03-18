@@ -36,6 +36,7 @@ nav {
   padding: 0.5%;
   align-items: center;
   min-height: 8vh;
+  z-index: 10;
 }
 
 .header-logo {
@@ -83,7 +84,7 @@ nav {
 }
 
 .title-card {
-  height: 60vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,10 +104,9 @@ nav {
 .gec {
   height: 35vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: left;
-  color: white;
+ align-items: center;
+  color: rgb(255, 230, 230);
   background-image: url("../images/gec.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,7 +116,7 @@ nav {
   padding-left: 2%;
   font-weight: 900;
   font-size: 2rem;
-  color: #af0000;
+  /* color: #af0000; */
 }
 
 .gec .custom {
@@ -226,7 +226,7 @@ span {
   width: max-content;
 }
 
-.unit-pgms a img {
+.unit-pgms a  {
   width: auto;
   height: 20rem;
 }
@@ -234,16 +234,13 @@ span {
 .images img {
   padding: 0.5rem;
   display: flex;
-  justify-content: space-between;
-  width: 20%;
+  
 }
 .img-col{
   margin-top: 10vh;
 }
 
-.no-shrink {
-  display: block;
-}
+
 
 .mal {
   font-family: "Indulekha";
@@ -272,6 +269,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
 }
 
 footer h2 {
@@ -286,7 +284,7 @@ footer h2 {
 }
 
 .content-unit {
-  padding: 2% 15% 2% 5%;
+  padding: 2% 5% 2% 5%;
 }
 
 .content-unit h2 {
@@ -308,15 +306,18 @@ footer h2 {
 }
 
 .secretary img {
-  width: 13rem;
-  padding-right: 2rem;
+  height:18rem;
+  border-radius: 10px;
 }
+.init{
+  margin-top: 7vh;
+}
+.init h3 {
+color: #af0000;
 
-.names {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+}
+.samImg{
+  margin-top: 10vh;
 }
 
 .initiative img {
@@ -332,7 +333,7 @@ footer h2 {
 .buttons a {
   background-color: #af0000;
   border-radius: 0.1rem;
-  width: 5rem;
+  /* width: 5rem; */
   text-align: center;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -406,7 +407,7 @@ footer h2 {
   }
 
   .title-card {
-    height: 30vh;
+    height: 100vh;
     background-size: cover;
   }
 
@@ -438,11 +439,18 @@ footer h2 {
     font-size: 0.8rem;
   }
 
-  p,
-  .mal {
-    font-size: 0.8rem;
+  p
+   {
+     float: right;
+    
+    font-size: 1rem;
   }
-
+  .mal {
+    font-size: 1.2rem;
+  }
+.join-sfi{
+  float: left;
+}
   .join-sfi h3 {
     font-size: 1.5rem;
   }
@@ -451,13 +459,18 @@ footer h2 {
     font-size: 1.3rem;
     padding: 2%;
   }
-
+.samImg{
+  margin-top: 5vh;
+}
   .martyrs h1 {
     font-size: 2rem;
   }
 
   footer {
+    z-index: -1;
+    width:100vw;
     height: 20vh;
+   
   }
 
   footer h2 {
@@ -473,15 +486,15 @@ footer h2 {
     justify-content: left;
   }
 
-  .images img {
-    width: 10rem;
+  .unit-pgms img {
+    margin-top: 2vh;
+    margin-bottom: 0%;
   }
-  .unit-pgms a img {
+  .unit-pgms a {
     height: 14.28rem;
   }
 
   .secretary img {
-    width: 7rem;
     padding-right: 0.4rem;
   }
 
@@ -499,5 +512,11 @@ footer h2 {
   }
   .img-col .col-span-6{
     margin-top: 5vh;
+  }
+  .init{
+    margin-top: 3vh;
+  }
+  .init h3{
+    font-size: 1rem;
   }
 }
