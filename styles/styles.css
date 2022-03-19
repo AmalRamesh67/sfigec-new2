@@ -155,13 +155,19 @@ nav {
 }
 
 .join-sfi {
-  width: 30%;
+  padding-left: 15rem;
+  width: 50%;
+  position: static;
   text-align: center;
 }
 
 .join-sfi img {
-  width: 8rem;
-  padding-bottom: 1rem;
+  width: 9rem;
+  padding-bottom: 0.7rem;
+ 
+  /* padding-block: 1px; */
+  
+  
 }
 
 .join-sfi h3 {
@@ -449,7 +455,7 @@ color: #af0000;
     font-size: 1.2rem;
   }
 .join-sfi{
-  float: left;
+  float: right;
 }
   .join-sfi h3 {
     font-size: 1.5rem;
