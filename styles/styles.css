@@ -153,10 +153,13 @@ nav {
 .content-sfi {
   width: 70%;
 }
+.content-sfi p{
+  text-align: justify;
+}
 
 .join-sfi {
-  padding-left: 15rem;
-  width: 50%;
+  padding-left: 2rem;
+  width: 100%;
   position: static;
   text-align: center;
 }
@@ -471,6 +474,21 @@ color: #af0000;
   .martyrs h1 {
     font-size: 2rem;
   }
+  .content-sfi{
+    width: 100%;
+  }
+  .wrapImg{  
+    width:60%;
+    margin-left: 15%;
+    display:flex;
+    justify-content: center;
+  }
+
+.content-sfi p{
+  display:inline;
+  text-align:justify;
+  float: right;
+}
 
   footer {
     z-index: -1;
@@ -516,13 +534,116 @@ color: #af0000;
   .img-col{
     margin-top:0vh;
   }
+ 
   .img-col .col-span-6{
     margin-top: 5vh;
   }
+  
   .init{
     margin-top: 3vh;
   }
   .init h3{
     font-size: 1rem;
   }
+}
+
+/* -------------------------------- */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides2 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fadeIn {
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s;
+  -moz-animation: fadeIn 1s;
+  -o-animation: fadeIn 1s;
+  -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.mySlides, .mySlides2 {
+padding-left:25%;
 }
