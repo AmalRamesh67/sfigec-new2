@@ -598,9 +598,9 @@ color: #af0000;
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 5px;
-  width: 5px;
-  margin: 0 2px;
+  height: 3px;
+  width: 3px;
+  margin: 0 1px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -608,7 +608,7 @@ color: #af0000;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #af0000;
 }
 
 /* Fading animation */
