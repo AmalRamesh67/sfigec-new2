@@ -91,7 +91,8 @@ nav {
   align-items: center;
   text-align: center;
   color: white;
-  background-image: url("../images/sfi.gif");
+  background-image: url("../images/sfigif_2.gif");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
