@@ -462,7 +462,7 @@ color: #af0000;
   }
 .join-sfi{
   float: right;
-  
+ 
 }
   .join-sfi h3 {
     font-size: 1.5rem;
@@ -483,7 +483,7 @@ color: #af0000;
   }
   .wrapImg{  
     width:60%;
-    margin-left: 15%;
+    margin-left: 20%;
     display:flex;
     justify-content: center;
   }
