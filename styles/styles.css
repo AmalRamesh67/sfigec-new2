@@ -420,6 +420,7 @@ color: #af0000;
   .title-card {
     height: 50vh;
     background-size: cover;
+    background-position: center;
   }
 
   .gec {
