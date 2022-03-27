@@ -163,6 +163,7 @@ nav {
   width: 100%;
   position: static;
   text-align: center;
+  display:block
 }
 
 .join-sfi img {
@@ -196,7 +197,9 @@ span {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
+.no-shrink{
+  display:block;
+}
 .slogan h1 {
   border: 1px solid #707070;
   border-radius: 0.5rem;
@@ -237,7 +240,7 @@ span {
   width: max-content;
 }
 
-.unit-pgms a  {
+.unit-pgms a img {
   width: auto;
   height: 20rem;
 }
@@ -245,15 +248,32 @@ span {
 .images img {
   padding: 0.5rem;
   display: flex;
+  justify-content: space-between;
+  width: 20%;
   
 }
 .img-col{
   margin-top: 5vh;
-  
+
+}
+.mart-mob{
+  display:none;
+}
+.martyrs-img{
+  display:block;
 }
 
-
-
+.martyrs-img img{
+ width:10%;
+}
+.mart-col
+{
+  display: flex;
+  justify-content:space-between;
+  padding-left:5%;
+  padding-right:5%;
+  margin-top: 5vh;
+}
 .mal {
   font-family: "Indulekha";
   font-size: 1.2rem;
@@ -366,6 +386,9 @@ color: #af0000;
   width: 25rem;
   margin: auto;
 }
+.wrapImg{
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   body {
@@ -463,6 +486,7 @@ color: #af0000;
   }
 .join-sfi{
   float: right;
+  display: none;
  
 }
   .join-sfi h3 {
@@ -487,6 +511,10 @@ color: #af0000;
     margin-left: 20%;
     display:flex;
     justify-content: center;
+   
+  }
+  .mart-mob{
+    display:flex
   }
 
 .content-sfi p{
@@ -514,14 +542,16 @@ color: #af0000;
     overflow: auto;
     justify-content: left;
   }
-
-  .unit-pgms img {
-    margin-top: 2vh;
-    margin-bottom: 0%;
+  .images img {
+    width: 10rem;
   }
-  .unit-pgms a {
+  .martyrs-img {
+   display:none;
+  }
+  .unit-pgms a img {
     height: 14.28rem;
   }
+  
 
   .secretary img {
     padding-right: 0.4rem;
@@ -550,105 +580,8 @@ color: #af0000;
   .init h3{
     font-size: 1rem;
   }
+  .martmob{
+    display: block;
+  }
 }
 
-/* -------------------------------- */
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-.mySlides2 {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 3px;
-  width: 3px;
-  margin: 0 1px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #af0000;
-}
-
-/* Fading animation */
-.fadeIn {
-  animation: fadeIn 1s;
-  -webkit-animation: fadeIn 1s;
-  -moz-animation: fadeIn 1s;
-  -o-animation: fadeIn 1s;
-  -ms-animation: fadeIn 1s;
-}
-
-@keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-  0% {opacity:0;}
-  100% {opacity:1;}
-}
-
-.mySlides, .mySlides2 {
-padding-left:25%;
-}
