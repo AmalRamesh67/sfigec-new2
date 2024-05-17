@@ -383,6 +383,12 @@ footer h2 {
   width: 25rem;
   margin: auto;
   border-radius: 24px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.images-flex img:hover {
+  transform: scale(1.1);
 }
 .wrapImg {
   display: none;
