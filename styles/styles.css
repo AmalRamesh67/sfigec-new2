@@ -574,6 +574,8 @@ footer h2 {
   }
   .mart-mob {
     display: flex;
+    overflow: auto;
+    width: 100%;
   }
 
   .content-sfi p {
