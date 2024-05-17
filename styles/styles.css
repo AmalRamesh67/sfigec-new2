@@ -14,6 +14,10 @@
   font-style: normal;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -106,7 +110,7 @@ nav {
   height: 35vh;
   display: flex;
   justify-content: center;
- align-items: center;
+  align-items: center;
   color: rgb(255, 230, 230);
   background-image: url("../images/gec.png");
   background-repeat: no-repeat;
@@ -154,7 +158,7 @@ nav {
 .content-sfi {
   width: 70%;
 }
-.content-sfi p{
+.content-sfi p {
   text-align: justify;
 }
 
@@ -163,17 +167,15 @@ nav {
   width: 100%;
   position: static;
   text-align: center;
-  display:block
+  display: block;
 }
 
 .join-sfi img {
   width: 14rem;
   padding-bottom: 0.8rem;
-  margin-left:10rem;
- 
+  margin-left: 10rem;
+
   /* padding-block: 1px; */
-  
-  
 }
 
 .join-sfi h3 {
@@ -197,8 +199,8 @@ span {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.no-shrink{
-  display:block;
+.no-shrink {
+  display: block;
 }
 .slogan h1 {
   border: 1px solid #707070;
@@ -235,7 +237,6 @@ span {
   justify-content: center;
 }
 
-
 .images a {
   width: max-content;
 }
@@ -250,28 +251,25 @@ span {
   display: flex;
   justify-content: space-between;
   width: 20%;
-  
 }
-.img-col{
+.img-col {
   margin-top: 5vh;
+}
+.mart-mob {
+  display: none;
+}
+.martyrs-img {
+  display: block;
+}
 
+.martyrs-img img {
+  width: 10%;
 }
-.mart-mob{
-  display:none;
-}
-.martyrs-img{
-  display:block;
-}
-
-.martyrs-img img{
- width:10%;
-}
-.mart-col
-{
+.mart-col {
   display: flex;
-  justify-content:space-between;
-  padding-left:5%;
-  padding-right:5%;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
   margin-top: 5vh;
 }
 .mal {
@@ -296,12 +294,12 @@ span {
 
 footer {
   height: 30vh;
+  width: 100%;
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 footer h2 {
@@ -331,24 +329,23 @@ footer h2 {
 .secretary {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
 }
 
 .secretary img {
-  height:18rem;
+  height: 18rem;
   border-radius: 10px;
 }
-.init{
+.init {
   margin-top: 7vh;
 }
 .init h3 {
-color: #af0000;
-
+  color: #af0000;
 }
-.samImg{
+.samImg {
   margin-top: 10vh;
 }
 
@@ -385,8 +382,9 @@ color: #af0000;
   padding: 1rem;
   width: 25rem;
   margin: auto;
+  border-radius: 24px;
 }
-.wrapImg{
+.wrapImg {
   display: none;
 }
 
@@ -417,6 +415,70 @@ color: #af0000;
 
   .burger {
     display: block;
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transform: scale(0.8);
+  }
+
+  .checkbox2:checked + label > .hamburger2 > .bar1 {
+    transform: translateX(40px);
+    background-color: transparent;
+  }
+
+  .checkbox2:checked + label > .hamburger2 > .bar2 {
+    transform: rotate(45deg);
+  }
+
+  .checkbox2:checked + label > .hamburger2 > .bar3 {
+    transform: rotate(-45deg);
+  }
+
+  .checkbox2:checked + label > .hamburger2 > .bar4 {
+    transform: translateX(-40px);
+    background-color: transparent;
+  }
+
+  .hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+  }
+
+  .bar1 {
+    top: 0;
+  }
+
+  .bar2,
+  .bar3 {
+    top: 13.5px;
+  }
+
+  .bar3 {
+    right: 0;
+  }
+
+  .bar4 {
+    bottom: 0;
+  }
+
+  .visuallyHidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
 
   .nav-active {
@@ -475,20 +537,18 @@ color: #af0000;
     font-size: 0.8rem;
   }
 
-  p
-   {
-     float: right;
-    
+  p {
+    float: right;
+
     font-size: 1rem;
   }
   .mal {
     font-size: 1.2rem;
   }
-.join-sfi{
-  float: right;
-  display: none;
- 
-}
+  .join-sfi {
+    float: right;
+    display: none;
+  }
   .join-sfi h3 {
     font-size: 1.5rem;
   }
@@ -497,37 +557,34 @@ color: #af0000;
     font-size: 1.3rem;
     padding: 2%;
   }
-.samImg{
-  margin-top: 5vh;
-}
+  .samImg {
+    margin-top: 5vh;
+  }
   .martyrs h1 {
     font-size: 2rem;
   }
-  .content-sfi{
+  .content-sfi {
     width: 100%;
   }
-  .wrapImg{  
-    width:60%;
+  .wrapImg {
+    width: 60%;
     margin-left: 20%;
-    display:flex;
+    display: flex;
     justify-content: center;
-   
   }
-  .mart-mob{
-    display:flex
+  .mart-mob {
+    display: flex;
   }
 
-.content-sfi p{
-  display:inline;
-  text-align:justify;
-  float: right;
-}
+  .content-sfi p {
+    display: inline;
+    text-align: justify;
+    float: right;
+  }
 
   footer {
     z-index: -1;
-    width:100vw;
     height: 20vh;
-   
   }
 
   footer h2 {
@@ -546,12 +603,11 @@ color: #af0000;
     width: 10rem;
   }
   .martyrs-img {
-   display:none;
+    display: none;
   }
   .unit-pgms a img {
     height: 14.28rem;
   }
-  
 
   .secretary img {
     padding-right: 0.4rem;
@@ -565,23 +621,23 @@ color: #af0000;
   .images-flex img {
     width: 100%;
     margin: 0;
+    border-radius: 24px;
   }
-  .img-col{
-    margin-top:0vh;
+  .img-col {
+    margin-top: 0vh;
   }
- 
-  .img-col .col-span-6{
+
+  .img-col .col-span-6 {
     margin-top: 5vh;
   }
-  
-  .init{
+
+  .init {
     margin-top: 3vh;
   }
-  .init h3{
+  .init h3 {
     font-size: 1rem;
   }
-  .martmob{
+  .martmob {
     display: block;
   }
 }
-

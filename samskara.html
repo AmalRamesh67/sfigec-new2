@@ -1,181 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sfi Gec</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <script src="https://use.fontawesome.com/020fefa3cb.js"></script>
-    <script type="text/javascript">
-      function openTab(th) {
-        window.open(th.name, "_blank");
-      }
-    </script>
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <nav class="">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="HomePage" />
-          </a>
-          <p>SFI GEC</p>
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="http://kaithangu.sfigec.in/">Notes</a></li>
-          <li><a href="http://admission.sfigec.in/">Admission</a></li>
-          <li>
-            <a onClick="openTab(this)" href="#" name="PDF/magazine.pdf"
-              >Magazine</a
-            >
-          </li>
-          <!-- <li><a href="http://tholi.in/">Magazine</a></li> -->
-          <li><a href="union.html">Union Initiatives</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="members.html">Members</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-        </div>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sfi Gec</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet" />
+  <link href="//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk" rel="stylesheet"
+    type="text/css" />
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/020fefa3cb.js"></script>
+  <script type="text/javascript">
+    function openTab(th) {
+      window.open(th.name, "_blank");
+    }
+  </script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+</head>
 
-    <div class="hide">
-      <!-- <div class="title-card">
+<body>
+  <header class="header">
+    <nav class="">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="HomePage" />
+        </a>
+        <p>SFI GEC</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="http://kaithangu.sfigec.in/">Notes</a></li>
+        <li><a href="http://admission.sfigec.in/">Admission</a></li>
+        <li>
+          <a onClick="openTab(this)" href="#" name="PDF/magazine.pdf">Magazine</a>
+        </li>
+        <!-- <li><a href="http://tholi.in/">Magazine</a></li> -->
+        <li><a href="union.html">Union Initiatives</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <input type="checkbox" id="checkbox2" class="checkbox2 visuallyHidden burger">
+      <label for="checkbox2">
+        <div class="hamburger hamburger2 burger">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
+        </div>
+      </label>
+    </nav>
+  </header>
+
+  <div class="hide">
+    <!-- <div class="title-card">
                 <img src="images/logo.png" alt="">
                 <h2>Students' Federation of India</h2>
                 <h4>SFI GEC</h4>          
         </div> -->
 
-      <div class="initiative">
-        <img src="images/samskara.jpg" alt="" />
-      </div>
-
-      <div class="content">
-        <p>
-          If you have been looking for a place to express your progressive
-          Artistry, to partake in the initiation of political dialogue with the
-          undying might of truth and engage in discussions that are oriented
-          towards a better tomorrow, then you have reached the ideal destination
-          of Art-Literature and Politics Combined at ‘Samskara GEC’! A platform
-          to scrape and sharpen your creativity against in a proactively
-          unbiased, brave and liberalist manner, aiming to rediscover the
-          importance of Art in bringing out ideas that can revolutionise the
-          World!
-        </p>
-      </div>
-      <div class="content">
-        <h2>Initiatives</h2>
-        <div class="init">
-          <h3>Samskara Talks</h3>
-          <p>
-            Samskara Talks is a set of interviews with some of the most radical
-            and celebrated artists of our generation to discuss the
-            intersections of art and politics. Kani Kusruthi, Kamal and Dileesh
-            Pothan are some of the people who have been a part of Samskara
-            Talks.
-          </p>
-
-          <a href="https://youtu.be/oJz6Nv4NWJ0">Watch the interview here</a>
-        </div>
-        <div class="init">
-          <h3>Samskara Blogs</h3>
-
-          <p>
-            A rebellion in a fascist regime, Samskara Blogs is enriched with
-            sharp words and bold ideas.
-          </p>
-          <a href="https://samskaragec.wordpress.com/">Read blog posts</a>
-        </div>
-        <div class="init">
-          <h3>Samskara ScreenPlay</h3>
-
-          <p>
-            Exclusively for film enthusiasts of GEC, to delve into the world
-            behind the creation of this craft by talking to the makers
-            themselves. Richard Anthony and Don Palathara, notable filmmakers,
-            were a part of ScreenPlay.
-          </p>
-        </div>
-        <div class="init inline-block">
-          <h3>Halla Bol</h3>
-          <p>A street play organized by Samskara GEC</p>
-        
-          <div><a href="https://youtu.be/27DzPQu67HI">Watch the play here</a></div>
-        </div>
-        <div class="init">
-          <h3>The Queer Canvas</h3>
-          <p>
-            A celebration of pride under the arch by collecting paintings,
-            drawing, poems and stories based on pride month.
-          </p>
-        </div>
-        <div class="init">
-          <h3>Roopantharam</h3>
-          <p>Tracing the roots of the radical art of Kerala Renaissance.</p>
-        </div>
-        <div class="grid grid-cols-12 mx-8 samImg">
-
-            <div class="col-span-10 col-start-2 md:col-span-3 md:col-start-3  ml-2">
-                <img src="./images/queercanvas.jpeg" alt="">
-            </div>
-            <div class="col-span-10 col-start-2 md:col-span-3 md:col-start-7 ml-3">
-                <img src="./images/screenplay.jpeg" alt="">
-            </div>
-            
-          
-        </div>
-      </div>
-      <div class="buttons hover">
-            <a href="https://instagram.com/samskara.sfigec?utm_medium=copy_link" target="_blank">Visit Samskara's Profile</a>
-            
-        </div>
-      <footer>
-        <div class="social-media">
-          <a href="https://instagram.com/samskara.sfigec?utm_medium=copy_link" target="_blank"
-            ><i class="fa fa-instagram fa-2x ico" aria-hidden="true"></i
-          ></a>
-          <div class="vertical-line"></div>
-          <a href="https://www.facebook.com/sfigecunit"
-            ><i class="fa fa-facebook fa-2x ico" aria-hidden="true"></i
-          ></a>
-        </div>
-        <h2>SFI GEC</h2>
-      </footer>
+    <div class="initiative">
+      <img src="images/samskara.jpg" alt="" />
     </div>
 
-    <script src="js/app.js"></script>
-  </body>
+    <div class="content">
+      <p>
+        If you have been looking for a place to express your progressive
+        Artistry, to partake in the initiation of political dialogue with the
+        undying might of truth and engage in discussions that are oriented
+        towards a better tomorrow, then you have reached the ideal destination
+        of Art-Literature and Politics Combined at ‘Samskara GEC’! A platform
+        to scrape and sharpen your creativity against in a proactively
+        unbiased, brave and liberalist manner, aiming to rediscover the
+        importance of Art in bringing out ideas that can revolutionise the
+        World!
+      </p>
+    </div>
+    <div class="content">
+      <h2>Initiatives</h2>
+      <div class="init">
+        <h3>Samskara Talks</h3>
+        <p>
+          Samskara Talks is a set of interviews with some of the most radical
+          and celebrated artists of our generation to discuss the
+          intersections of art and politics. Kani Kusruthi, Kamal and Dileesh
+          Pothan are some of the people who have been a part of Samskara
+          Talks.
+        </p>
+
+        <a href="https://youtu.be/oJz6Nv4NWJ0">Watch the interview here</a>
+      </div>
+      <div class="init">
+        <h3>Samskara Blogs</h3>
+
+        <p>
+          A rebellion in a fascist regime, Samskara Blogs is enriched with
+          sharp words and bold ideas.
+        </p>
+        <a href="https://samskaragec.wordpress.com/">Read blog posts</a>
+      </div>
+      <div class="init">
+        <h3>Samskara ScreenPlay</h3>
+
+        <p>
+          Exclusively for film enthusiasts of GEC, to delve into the world
+          behind the creation of this craft by talking to the makers
+          themselves. Richard Anthony and Don Palathara, notable filmmakers,
+          were a part of ScreenPlay.
+        </p>
+      </div>
+      <div class="init inline-block">
+        <h3>Halla Bol</h3>
+        <p>A street play organized by Samskara GEC</p>
+
+        <div><a href="https://youtu.be/27DzPQu67HI">Watch the play here</a></div>
+      </div>
+      <div class="init">
+        <h3>The Queer Canvas</h3>
+        <p>
+          A celebration of pride under the arch by collecting paintings,
+          drawing, poems and stories based on pride month.
+        </p>
+      </div>
+      <div class="init">
+        <h3>Roopantharam</h3>
+        <p>Tracing the roots of the radical art of Kerala Renaissance.</p>
+      </div>
+      <div class="grid grid-cols-12 mx-8 samImg">
+
+        <div class="col-span-10 col-start-2 md:col-span-3 md:col-start-3  ml-2">
+          <img src="./images/queercanvas.jpeg" alt="">
+        </div>
+        <div class="col-span-10 col-start-2 md:col-span-3 md:col-start-7 ml-3">
+          <img src="./images/screenplay.jpeg" alt="">
+        </div>
+
+
+      </div>
+    </div>
+    <div class="buttons hover">
+      <a href="https://instagram.com/samskara.sfigec?utm_medium=copy_link" target="_blank">Visit Samskara's Profile</a>
+
+    </div>
+    <footer>
+      <div class="social-media">
+        <a href="https://instagram.com/samskara.sfigec?utm_medium=copy_link" target="_blank"><i
+            class="fa fa-instagram fa-2x ico" aria-hidden="true"></i></a>
+        <div class="vertical-line"></div>
+        <a href="https://www.facebook.com/sfigecunit"><i class="fa fa-facebook fa-2x ico" aria-hidden="true"></i></a>
+      </div>
+      <h2>SFI GEC</h2>
+    </footer>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+
 </html>
